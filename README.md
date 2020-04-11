@@ -17,8 +17,10 @@
 
 <details>
 <summary>
-### Переменные
+Переменные
 </summary>
+
+### Переменные
 
 ---
 
@@ -144,8 +146,10 @@ values = input()  # без строки приглашения!
 
 <details>
 <summary>
-### Условия
+Условия
 </summary>
+
+### Условия
 
 ---
 
@@ -209,8 +213,10 @@ values = input()  # без строки приглашения!
 
 <details>
 <summary>
-### Задачи по материалам недели
+Задачи по материалам недели
 </summary>
+
+### Задачи по материалам недели
 
 ---
 
@@ -278,10 +284,10 @@ False
 
 Напишите простой калькулятор, который считывает с пользовательского ввода три строки: первое число, второе число и операцию, после чего применяет операцию к введённым числам ("первое число" "операция" "второе число") и выводит результат на экран.
 
-Поддерживаемые операции: +, -, /, \*, mod, pow, div, где
-`mod` — это взятие остатка от деления,
-`pow` — возведение в степень,
-`div` — целочисленное деление.
+Поддерживаемые операции: +, -, /, \*, mod, pow, div, где<br>
+`mod` — это взятие остатка от деления,<br>
+`pow` — возведение в степень,<br>
+`div` — целочисленное деление.<br>
 
 Если выполняется деление и второе число равно 0, необходимо выводить строку "Деление на 0!".
 
@@ -562,9 +568,9 @@ r
 ## Циклы. Строки. Списки
 
 <details>
-<summary>
+<summary>Цикл while</summary>
+
 ### Цикл while
-</summary>
 
 ---
 
@@ -657,9 +663,9 @@ r
 </details>
 
 <details>
-<summary>
+<summary>Операторы break, continue</summary>
+
 ### Операторы break, continue
-</summary>
 
 ---
 
@@ -716,9 +722,99 @@ r
 </details>
 
 <details>
-<summary>
+<summary>Цикл for</summary>
+
 ### Цикл for
-</summary>
+
+---
+
+Когда Павел учился в школе, он запоминал таблицу умножения прямоугольными блоками. Для тренировок ему бы очень пригодилась программа, которая показывала бы блок таблицы умножения.
+
+Напишите программу, на вход которой даются четыре числа ![a](https://render.githubusercontent.com/render/math?math=a), ![b](https://render.githubusercontent.com/render/math?math=b), ![c](https://render.githubusercontent.com/render/math?math=c) и ![d](https://render.githubusercontent.com/render/math?math=d), каждое в своей строке. Программа должна вывести фрагмент таблицы умножения для всех чисел отрезка ![[a; b]](https://render.githubusercontent.com/render/math?math=%5Ba%3B%20b%5D) на все числа отрезка ![[c;d]](https://render.githubusercontent.com/render/math?math=%5Bc%3Bd%5D).
+
+Числа ![a](https://render.githubusercontent.com/render/math?math=a), ![b](https://render.githubusercontent.com/render/math?math=b), ![c](https://render.githubusercontent.com/render/math?math=c) и ![d](https://render.githubusercontent.com/render/math?math=d) являются натуральными и не превосходят 10, ![a \le b, c \le d](https://render.githubusercontent.com/render/math?math=a%20%5Cle%20b%2C%20c%20%5Cle%20d).
+
+Следуйте формату вывода из примера, для разделения элементов внутри строки используйте '\t' — символ табуляции. Заметьте, что левым столбцом и верхней строкой выводятся **сами числа из заданных отрезков** — заголовочные столбец и строка таблицы.
+
+**Sample Input 1:**
+
+```
+7
+10
+5
+6
+```
+
+**Sample Output 1:**
+
+```
+	5	6
+7	35	42
+8	40	48
+9	45	54
+10	50	60
+```
+
+**Sample Input 2:**
+
+```
+5
+5
+6
+6
+```
+
+**Sample Output 2:**
+
+```
+	6
+5	30
+```
+
+**Sample Input 3:**
+
+```
+1
+3
+2
+4
+```
+
+**Sample Output 3:**
+
+```
+	2	3	4
+1	2	3	4
+2	4	6	8
+3	6	9	12
+```
+
+[Решение](solutions/week-2/for_multiplication_table.py)
+
+---
+
+<br>
+
+Напишите программу, которая считывает с клавиатуры два числа ![a](https://render.githubusercontent.com/render/math?math=a) и ![b](https://render.githubusercontent.com/render/math?math=b), считает и выводит на консоль среднее арифметическое всех чисел из отрезка ![[a; b]](https://render.githubusercontent.com/render/math?math=%5Ba%3B%20b%5D), которые делятся на ![3](https://render.githubusercontent.com/render/math?math=3).
+
+В приведенном ниже примере среднее арифметическое считается для чисел на отрезке ![[-5; 12]](https://render.githubusercontent.com/render/math?math=%5B-5%3B%2012%5D). Всего чисел, делящихся на ![3](https://render.githubusercontent.com/render/math?math=3), на этом отрезке ![6: -3, 0, 3, 6, 9, 12](https://render.githubusercontent.com/render/math?math=6%3A%20-3%2C%200%2C%203%2C%206%2C%209%2C%2012). Их среднее арифметическое равно ![4.5](https://render.githubusercontent.com/render/math?math=4.5)
+
+На вход программе подаются интервалы, внутри которых всегда есть хотя бы одно число, которое делится на ![3](https://render.githubusercontent.com/render/math?math=3).
+
+**Sample Input:**
+
+```
+-5
+12
+```
+
+**Sample Output:**
+
+```
+4.5
+```
+
+[Решение](solutions/week-2/for_ariphmetical_mean.py)
 
 ---
 
